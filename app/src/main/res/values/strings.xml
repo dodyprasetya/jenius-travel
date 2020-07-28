@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">JeniusTravel</string>
+    <string name="app_name" translatable="false">Jenius Travel</string>
+
+    <string name="label_login">Login</string>
+    <string name="label_username">Username</string>
+    <string name="hint_username">Input your username here..</string>
+    <string name="label_password">Password</string>
+    <string name="hint_password">Input your password here..</string>
+    <string name="button_signin">Sign In</string>
+
 </resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="label_login">Masuk</string>
+    <string name="label_username">Nama User</string>
+    <string name="hint_username">Input nama Anda di sini..</string>
+    <string name="label_password">Kata Sandi</string>
+    <string name="hint_password">Input kata sandi Anda di sini..</string>
+    <string name="button_signin">Masuk</string>
+</resources>

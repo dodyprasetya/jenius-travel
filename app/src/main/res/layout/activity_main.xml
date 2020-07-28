@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:src="@drawable/jenius_logo"
         android:layout_alignParentEnd="true"
-        android:layout_margin="30dp"
+        android:layout_margin="@dimen/margin_default"
         />
 
     <TextView
@@ -17,11 +17,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@android:color/white"
-        android:textSize="30sp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="60dp"
+        android:textSize="@dimen/font_size_headline"
+        android:layout_marginStart="@dimen/margin_default"
+        android:layout_marginTop="@dimen/margin_xl"
         android:textStyle="bold"
-        android:text="Login"
+        android:text="@string/label_login"
         />
 
     <LinearLayout
@@ -29,45 +29,45 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_below="@+id/textLogin"
-        android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginHorizontal="@dimen/margin_default"
+        android:layout_marginTop="@dimen/margin_xxl"
         android:layout_centerInParent="true">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Username"
+            android:text="@string/label_username"
             />
 
         <EditText
             android:id="@+id/inputUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Input your username here.."
+            android:hint="@string/hint_username"
             />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Password"
-            android:layout_marginTop="20dp"
+            android:text="@string/label_password"
+            android:layout_marginTop="@dimen/margin_s"
             />
 
         <EditText
             android:id="@+id/inputPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Input your password here.."
+            android:hint="@string/hint_password"
             android:inputType="textPassword"
             />
 
         <Button
             android:id="@+id/buttonSignIn"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="Sign In"
-            android:layout_marginTop="20dp"
-            android:background="#5ad0f7"
+            android:layout_height="@dimen/button_height"
+            android:text="@string/button_signin"
+            android:layout_marginTop="@dimen/margin_s"
+            android:background="@color/buttonPrimary"
             android:textColor="@android:color/white"
             />
 
