@@ -6,4 +6,9 @@
     <string name="label_password">Kata Sandi</string>
     <string name="hint_password">Input kata sandi Anda di sini..</string>
     <string name="button_signin">Masuk</string>
+    <string name="label_name">Nama</string>
+    <string name="label_phone">No HP</string>
+    <string name="label_address">Alamat</string>
+    <string name="label_profile">Data Diri</string>
+    <string name="label_travel_list">Data Travel</string>
 </resources>
