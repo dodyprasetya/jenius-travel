@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuProfile"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:title="@string/label_profile" />
+
+    <item
+        android:id="@+id/menuTravelList"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:title="@string/label_travel_list" />
+</menu>
