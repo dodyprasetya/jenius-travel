@@ -9,6 +9,8 @@ import kotlinx.android.synthetic.main.fragment_travel_list.*
 
 class TravelListFragment : Fragment() {
 
+    private val listDestination = ArrayList<Destination>()
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -19,6 +21,14 @@ class TravelListFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        recyclerView.adapter = DestinationAdapter()
+        // adding data
+        listDestination.add(Destination("Tokyo, Japan", 6, true))
+        listDestination.add(Destination("Paris, France", 7, false))
+        listDestination.add(Destination("Bali, Indonesia", 10, false))
+        listDestination.add(Destination("Phuket Island", 3, true))
+        listDestination.add(Destination("Maldives", 30, true))
+        listDestination.add(Destination("Hong Kong", 2, false))
+
+        recyclerView.adapter = TravelAdapter(listDestination)
     }
 }
