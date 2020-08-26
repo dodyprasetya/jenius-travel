@@ -11,10 +11,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val username = intent.getStringExtra("username")
-
         val bundle = Bundle()
-        bundle.putString("username", username)
+        bundle.putString("name", intent.getStringExtra("name"))
+        bundle.putString("phoneNumber", intent.getStringExtra("phoneNumber"))
+        bundle.putString("address", intent.getStringExtra("address"))
+        bundle.putString("photo", intent.getStringExtra("photo"))
 
         val profileFragment = ProfileFragment()
         profileFragment.arguments = bundle

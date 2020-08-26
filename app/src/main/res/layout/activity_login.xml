@@ -59,7 +59,16 @@
             android:id="@+id/buttonSignIn"
             style="@style/PrimaryButton"
             android:layout_marginTop="@dimen/margin_s"
-            android:text="@string/button_signin" />
+            android:text="@string/button_signin"
+            android:foreground="?attr/selectableItemBackground" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_s"
+            android:visibility="gone"/>
 
     </LinearLayout>
 

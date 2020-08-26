@@ -8,7 +8,7 @@ import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.item_travel.view.*
 
-class TravelAdapter(val listDestination: ArrayList<Destination>) : RecyclerView.Adapter<TravelAdapter.TravelViewHolder>() {
+class TravelAdapter(val listDestination: List<Destination>) : RecyclerView.Adapter<TravelAdapter.TravelViewHolder>() {
 
     private var context: Context? = null
 
@@ -36,6 +36,8 @@ class TravelAdapter(val listDestination: ArrayList<Destination>) : RecyclerView.
             // hide and show featured text
             if (destination.isFeatured) itemView.textFeatured.visibility = View.VISIBLE
             else itemView.textFeatured.visibility = View.GONE
+
+            itemView.imageDestination.setImageUrl(destination.imageUrl)
 
             // set click listener on list
             itemView.listContainer.setOnClickListener {

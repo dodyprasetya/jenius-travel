@@ -19,7 +19,9 @@ class ProfileFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        val username = arguments?.getString("username")
-        textName.text = username
+        imageProfile.setImageUrl(arguments?.getString("photo"))
+        textName.text = arguments?.getString("name")
+        textPhone.text = arguments?.getString("phoneNumber")
+        textAddress.text = arguments?.getString("address")
     }
 }
