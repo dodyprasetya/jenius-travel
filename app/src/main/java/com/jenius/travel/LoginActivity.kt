@@ -50,12 +50,16 @@ class LoginActivity : AppCompatActivity() {
                     progressBar.visibility = View.GONE
                     buttonSignIn.isEnabled = true
 
-                    val intent = Intent(this@LoginActivity, MainActivity::class.java)
-                    intent.putExtra("name", response?.name)
-                    intent.putExtra("address", response?.address)
-                    intent.putExtra("photo", response?.photo)
-                    intent.putExtra("phoneNumber", response?.phoneNumber)
-                    startActivity(intent)
+                    if(response?.code == 401) {
+                        Toast.makeText(this@LoginActivity, "Username atau password salah", Toast.LENGTH_SHORT).show()
+                    } else {
+                        val intent = Intent(this@LoginActivity, MainActivity::class.java)
+                        intent.putExtra("name", response?.name)
+                        intent.putExtra("address", response?.address)
+                        intent.putExtra("photo", response?.photo)
+                        intent.putExtra("phoneNumber", response?.phoneNumber)
+                        startActivity(intent)
+                    }
                 }
 
                 override fun onError(anError: ANError?) {
